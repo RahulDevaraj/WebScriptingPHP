@@ -24,11 +24,10 @@ $population3 =array(
 // echo $population3[1][2];
 
 foreach ($population as $state => $city) {
-    echo $state;
-    echo "\n";
+
     foreach ($city as $cname => $pop) {
         // echo $cname." ".$pop;
-        printf("%s %d",$cname,$pop);
+        printf("%s %s %d",$state,$cname,$pop);
         echo "\n";
     }
 }
